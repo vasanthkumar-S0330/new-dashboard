@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+          <div class="mobile-nav-title">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            
+            <span id="mobile-title">Saga </span><span class="gray">Suite</span>
+          </div>
+          <div class="mobile-nav-tabs">
+            <button class="mobile-nav-tab" data-panel="mail-panel">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </button>
+            <button class="mobile-nav-tab active" data-panel="calendar-panel">
+              <span class="icon" style="font-weight: 600; text-align: center;">📅 </span>
+            </button>
+            <button class="mobile-nav-tab" data-panel="chat-panel">
+              <span class="icon" style="font-weight: 600; text-align: center;">💬</span>
+            </button>
+          </div>
+        </div>
+    
+        <!-- Mail Panel -->
+        <div class="panel mail-panel" id="mail-panel">
+          <div class="panel-header">
+            <div class="panel-title">
+              <svg class="icon" style="color: #3b82f6; margin-right: 0.5rem; vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span class="blue">Saga</span> <span class="gray">Mail</span>
+            </div>
+            <div class="panel-actions">
+              <svg class="icon" xmlns="" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+               
+              </svg>
+            </div>
+          </div>
+          
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search in mail">
+            <svg class="search-icon icon" xmlns="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          
+          <div class="mail-list">
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/male(2).png" alt="Bharathi Ragav">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">Bharathi Ragav</div>
+            <div class="mail-time">10:25 AM</div>
+          </div>
+          <div class="mail-subject">Nextcloud Dashboard Figma ...</div>
+          <div class="mail-preview">I am continuing the Figma design for the...</div>
+              </div>
+            </div>
+            
+            <div class="mail-item">
+              <div class="avatar">
+          <span class="avatar-initials">SS</span>
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">Senkathir Selvan</div>
+            <div class="mail-time">09:55 AM</div>
+          </div>
+          <div class="mail-subject">Nextcloud Dashboard Figma ...</div>
+          <div class="mail-preview">I am continuing the Figma design for the...</div>
+              </div>
+            </div>
+            
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/male2(2).png" alt="Thamizh">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">Thamizh</div>
+            <div class="mail-time">09:49 AM</div>
+          </div>
+          <div class="mail-subject">Nextcloud Dashboard Figma ...</div>
+          <div class="mail-preview">I am continuing the Figma design for the...</div>
+              </div>
+            </div>
+            
+            <div class="mail-item">
+              <div class="avatar">
+          <span class="avatar-initials">AK</span>
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">Abitha Kasi</div>
+            <div class="mail-time">Yesterday 11:05 PM</div>
+          </div>
+          <div class="mail-subject">Nextcloud Dashboard Figma ...</div>
+          <div class="mail-preview">I am continuing the Figma design for the...</div>
+              </div>
+            </div>
+            
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/team.jpg" alt="Sagasoft Team">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">Sagasoft Team</div>
+            <div class="mail-time">Yesterday 10:18 PM</div>
+          </div>
+          <div class="mail-subject">Nextcloud Dashboard Figma ...</div>
+          <div class="mail-preview">I am continuing the Figma design for the...</div>
+              </div>
+            </div>
+
+            <!-- Additional 10 Users -->
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/female.png" alt="User 1">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">Ethiraj</div>
+            <div class="mail-time">10:00 AM</div>
+          </div>
+          <div class="mail-subject">Meeting Reminder</div>
+          <div class="mail-preview">Don't forget about the meeting at 11 AM...</div>
+              </div>
+            </div>
+
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/male(2).png" alt="User 2">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">Sathish</div>
+            <div class="mail-time">09:30 AM</div>
+          </div>
+          <div class="mail-subject">Project Update</div>
+          <div class="mail-preview">The project is on track and will be...</div>
+              </div>
+            </div>
+
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/female2.jpg" alt="User 3">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">User 3</div>
+            <div class="mail-time">Yesterday</div>
+          </div>
+          <div class="mail-subject">Weekly Report</div>
+          <div class="mail-preview">Please find the weekly report attached...</div>
+              </div>
+            </div>
+
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/male2(2).png" alt="User 4">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">User 4</div>
+            <div class="mail-time">Yesterday</div>
+          </div>
+          <div class="mail-subject">Feedback Request</div>
+          <div class="mail-preview">We would appreciate your feedback on...</div>
+              </div>
+            </div>
+
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/male.jpg" alt="User 5">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">User 5</div>
+            <div class="mail-time">2 Days Ago</div>
+          </div>
+          <div class="mail-subject">Invoice</div>
+          <div class="mail-preview">Your invoice for the month is ready...</div>
+              </div>
+            </div>
+
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/dummy_01.jpg" alt="User 6">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">User 6</div>
+            <div class="mail-time">2 Days Ago</div>
+          </div>
+          <div class="mail-subject">Event Invitation</div>
+          <div class="mail-preview">You are invited to the annual company...</div>
+              </div>
+            </div>
+
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/female2.jpg" alt="User 7">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">User 7</div>
+            <div class="mail-time">3 Days Ago</div>
+          </div>
+          <div class="mail-subject">New Policy</div>
+          <div class="mail-preview">Please review the updated company policy...</div>
+              </div>
+            </div>
+
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/dummy_01.jpg" alt="User 8">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">User 8</div>
+            <div class="mail-time">Last Week</div>
+          </div>
+          <div class="mail-subject">Training Schedule</div>
+          <div class="mail-preview">The training schedule for next week is...</div>
+              </div>
+            </div>
+
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/dummy_01.jpg" alt="User 9">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">User 9</div>
+            <div class="mail-time">Last Week</div>
+          </div>
+          <div class="mail-subject">System Maintenance</div>
+          <div class="mail-preview">Scheduled maintenance will occur on...</div>
+              </div>
+            </div>
+
+            <div class="mail-item">
+              <div class="avatar">
+          <img src="images/female2.jpg" alt="User 10">
+              </div>
+              <div class="mail-content">
+          <div class="mail-header">
+            <div class="sender-name">User 10</div>
+            <div class="mail-time">Last Week</div>
+          </div>
+          <div class="mail-subject">Welcome</div>
+          <div class="mail-preview">Welcome to the team! We are excited to...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Calendar Panel -->
+        <div class="panel calendar-panel active" id="calendar-panel">
+          <div class="panel-header">
+            <div class="panel-title">
+              <span class="blue">Saga</span> <span class="orange">Calendar</span>
+            </div>
+            
+            <div class="panel-actions">
+              <button style="padding: 0.25rem; border-radius: 9999px; background-color: #f3f4f6; border: none;">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+              </button>
+              <button style="padding: 0.25rem; border-radius: 9999px; background-color: #f3f4f6; border: none;">
+                <!-- <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg> -->
+              </button>
+
+
+              
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" y1="3" x2="14" y2="10"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+              </svg>
+            </div>
+          </div>
+           <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search in mail">
+            <svg class="search-icon icon" xmlns="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          <div class="calendar-days">
+            <div class="calendar-day">Sun</div>
+            <div class="calendar-day">Mon</div>
+            <div class="calendar-day">Tue</div>
+            <div class="calendar-day">Wed</div>
+            <div class="calendar-day">Thu</div>
+            <div class="calendar-day">Fri</div>
+            <div class="calendar-day">Sat</div>
+          </div>
+          
+          <div class="calendar-dates">
+            <div class="calendar-date">1</div>
+            <div class="calendar-date">2</div>
+            <div class="calendar-date">3</div>
+            <div class="calendar-date active">4</div>
+            <div class="calendar-date">5</div>
+            <div class="calendar-date">6</div>
+            <div class="calendar-date">7</div>
+          </div>
+          
+          <div class="calendar-content">
+            <div class="date-header">
+              <div class="date-title">4 March</div>
+              <div class="date-subtitle">Wednesday</div>
+            </div>
+            
+            <div class="events">
+              <div class="event">
+                <div class="event-time">08:00</div>
+                <div class="event-content">
+                  <div class="event-card green">
+                    <div class="event-title">Client Meeting</div>
+                    <div class="event-description">Client meet with colleagues & discuss daily life.</div>
+                    <div class="event-attendees">
+                      <div class="attendee">
+                        <img src="images/Ellipse 2.png" alt="User">
+                      </div>
+                      <div class="attendee">
+                        <img src="images/dummy_01.jpg" alt="User">
+                      </div>
+                      <div class="attendee">
+                        <img src="images/female.png" alt="User">
+                      </div>
+                      <div class="attendee-more">+</div>
+                    </div>
+                  </div>
+                  <div class="event-duration">35 Min</div>
+                </div>
+              </div>
+              
+              <div class="event">
+                <div class="event-time">12:00</div>
+                <div class="event-content">
+                  <div class="event-card blue">
+                    <div class="event-title">Manager Meeting</div>
+                    <div class="event-description">Manager meet with colleagues & discuss daily life.</div>
+                    <div class="event-attendees">
+                      <div class="attendee">
+                        <img src="images/Ellipse 2.png" alt="User">
+                      </div>
+                      <div class="attendee">
+                        <img src="images/female2.jpg" alt="User">
+                      </div>
+                      <div class="attendee">
+                        <img src="images/male2(2).png" alt="User">
+                      </div>
+                      <div class="attendee-more">+</div>
+                    </div>
+                  </div>
+                  <div class="event-duration">45 Min</div>
+                </div>
+              </div>
+              
+              <div class="event">
+                <div class="event-time">16:00</div>
+                <div class="event-content">
+                  <div class="event-card orange">
+                    <div class="event-title">Family Meet</div>
+                    <div class="event-description">Family meet with colleagues & discuss daily life.</div>
+                    <div class="event-attendees">
+                      <div class="attendee">
+                        <img src="images/Ellipse 2.png" alt="User">
+                      </div>
+                      <div class="attendee">
+                        <img src="images/male2(2).png" alt="User">
+                      </div>
+                      <div class="attendee">
+                        <img src="images/dummy_01.jpg" alt="User">
+                      </div>
+                      <div class="attendee-more">+</div>
+                    </div>
+                  </div>
+                  <div class="event-duration">35 Min</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <button class="add-event-button">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+        </div>
+    
+        <!-- Chat Panel -->
+        <div class="panel chat-panel" id="chat-panel">
+          <div class="panel-header">
+            <div class="panel-title"><span class="blue">Saga</span> <span class="orange">Chat</span></div>
+            <div class="panel-actions">
+              <!-- <svg class="icon" style="color: #ffffff;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line> -->
+              </svg>
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" y1="3" x2="14" y2="10"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+              </svg>
+            </div>
+
+            
+          </div>
+          
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search in chat">
+            <svg class="search-icon icon" xmlns="http://www.w3.org/" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          
+          <div class="chat-list">
+            <div class="chat-item">
+              <div class="avatar">
+                <img src="images/Ellipse 2.png" alt="Santhosh">
+              </div>
+              <div class="chat-content">
+                <div class="chat-header">
+                  <div class="chat-name">Santhosh</div>
+                  <div class="chat-time">04:50</div>
+                </div>
+                <div class="chat-message">Hi Everyone what today work</div>
+              </div>
+            </div>
+            
+            <div class="chat-item">
+              <div class="avatar">
+                <img src="images/male(2).png" alt="Senkathir Selvan">
+              </div>
+              <div class="chat-content">
+                <div class="chat-header">
+                  <div class="chat-name">Senkathir Selvan Se...</div>
+                  <div class="chat-time">04:50</div>
+                </div>
+                <div class="chat-message">Hi Everyone what today...</div>
+              </div>
+              <div class="unread-badge">1</div>
+            </div>
+            
+            <div class="chat-item">
+              <div class="avatar">
+                <img src="images/male2(2).png" alt="Thamizharasan">
+              </div>
+              <div class="chat-content">
+                <div class="chat-header">
+                  <div class="chat-name">Thamizharasan Rag...</div>
+                  <div class="chat-time">04:50</div>
+                </div>
+                <div class="chat-message">Hi Everyone what today...</div>
+              </div>
+              <div class="unread-badge">3</div>
+            </div>
+            
+            <div class="chat-item">
+              <div class="avatar">
+                <img src="images/female.png" alt="Abitha">
+              </div>
+              <div class="chat-content">
+                <div class="chat-header">
+                  <div class="chat-name">Abitha</div>
+                  <div class="chat-time">04:50</div>
+                </div>
+                <div class="chat-message">Hi Everyone what today...</div>
+              </div>
+              <div class="unread-badge">1</div>
+            </div>
+            
+            <div class="chat-item">
+              <div class="avatar">
+                <img src="images/dummy_01.jpg" alt="Punitha">
+              </div>
+              <div class="chat-content">
+                <div class="chat-header">
+                  <div class="chat-name">Punitha</div>
+                  <div class="chat-time">04:50</div>
+                </div>
+                <div class="chat-message">Hi Everyone what today...</div>
+              </div>
+              <div class="unread-badge">2</div>
+            </div>
+            
+            <div class="chat-item">
+              <div class="avatar">
+                <img src="images/female.png" alt="Bharathi">
+              </div>
+              <div class="chat-content">
+                <div class="chat-header">
+                  <div class="chat-name">Bharathi Veeraraga...</div>
+                  <div class="chat-time">16:50</div>
+                </div>
+                <div class="chat-message">Hi Everyone what today...</div>
+              </div>
+            </div>
+            
+            <div class="chat-item">
+              <div class="avatar">
+                <img src="images/male.jpg" alt="Kumar">
+              </div>
+              <div class="chat-content">
+                <div class="chat-header">
+                  <div class="chat-name">Kumar</div>
+                  <div class="chat-time">Yesterday</div>
+                </div>
+                <div class="chat-message">Hi Everyone what today...</div>
+              </div>
+            </div>
+            
+            <div class="chat-item">
+              <div class="avatar">
+                <img src="images/dummy_01.jpg" alt="Ethiraj">
+              </div>
+              <div class="chat-content">
+                <div class="chat-header">
+                  <div class="chat-name">Ethiraj</div>
+                  <div class="chat-time">Tuesday</div>
+                </div>
+                <div class="chat-message">Hi Everyone what today...</div>
+              </div>
+            </div>
+            
+            <div class="chat-item">
+              <div class="avatar">
+                <img src="images/Ellipse 2.png" alt="Kumaravel">
+              </div>
+              <div class="chat-content">
+                <div class="chat-header">
+                  <div class="chat-name">Kumaravel</div>
+                  <div class="chat-time">Tuesday</div>
+                </div>
+                <div class="chat-message">Hi Everyone what today...</div>
+              </div>
+            </div>
+            
+            <div class="chat-item">
+              <div class="avatar">
+                <img src="images/female2.jpg" alt="Janani">
+              </div>
+              <div class="chat-content">
+                <div class="chat-header">
+                  <div class="chat-name">Janani</div>
+                  <div class="chat-time">13/03</div>
+                </div>
+                <div class="chat-message">all guys today leave...</div>
+              </div>
+            </div>
+            
+            <div class="chat-item">
+              <div class="avatar">
+                <img src="images/male2(2).png" alt="Gokul">
+              </div>
+              <div class="chat-content">
+                <div class="chat-header">
+                  <div class="chat-name">Gokul</div>
+                  <div class="chat-time">14/03</div>
+                </div>
+                <div class="chat-message">all guys today leave...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script>
+        // Mobile panel switching
+        document.addEventListener('DOMContentLoaded', function() {
+          const mobileNavTabs = document.querySelectorAll('.mobile-nav-tab');
+          const panels = document.querySelectorAll('.panel');
+          const mobileTitle = document.getElementById('mobile-title');
+          
+          mobileNavTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+              const panelId = this.getAttribute('data-panel');
+              
+              // Update active tab
+              mobileNavTabs.forEach(t => t.classList.remove('active'));
+              this.classList.add('active');
+              
+              // Show selected panel
+              panels.forEach(panel => {
+                panel.classList.remove('active');
+                if (panel.id === panelId) {
+                  panel.classList.add('active');
+                  
+                  // Update mobile title
+                  if (panelId === 'mail-panel') {
+                    mobileTitle.textContent = 'Menu';
+                  } else if (panelId === 'calendar-panel') {
+                    mobileTitle.textContent = 'Menu';
+                  } else if (panelId === 'chat-panel') {
+                    mobileTitle.textContent = 'Menu';
+                  }
+                }
+              });
+            });
+          });
+        });
+      </script>
+</body>
+</html>

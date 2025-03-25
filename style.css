@@ -60,6 +60,22 @@
     color: #3b82f6;
   }
 
+  #mobile-title {
+    color: #3b82f6
+  }
+
+  .blue {
+    color: #3b82f6;
+  }
+
+  .gray {
+    color: #e48202;
+  }
+
+  .orange {
+    color: #e48202;
+  }
+
   /* Panels */
   .panel {
     flex: 1;
@@ -68,13 +84,25 @@
     border-right: 1px solid #e5e5e5;
   }
 
-  .panel-header {
+  /* .panel-header {
     padding: 1rem;
     border-bottom: 1px solid #e5e5e5;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+  } */
+
+  .panel-header {
+    position: sticky;
+    top: 0; /* Sticks the header to the top */
+    background: white; /* Optional: Prevents transparency when scrolling */
+    z-index: 1000; /* Ensures it stays above other elements */
+    padding: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
   .panel-title {
     font-weight: 600;
@@ -94,10 +122,21 @@
     gap: 0.5rem;
   }
 
-  .search-container {
+  /* .search-container {
     padding: 1rem;
     position: relative;
-  }
+  } */
+
+
+  .search-container {
+    position: sticky;
+    top: 60px; /* Adjust based on .panel-header height */
+    background: white; /* Prevents transparency */
+    z-index: 999; /* Keep it above content but below .panel-header */
+    padding: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
 
   .search-input {
     width: 100%;
@@ -128,7 +167,7 @@
   }
 
   .mail-item:hover, .chat-item:hover {
-    background-color: #f0f7ff;
+    background-color: #c7e1ff;
   }
 
   .avatar {
@@ -182,6 +221,14 @@
     color: #6b7280;
     white-space: nowrap;
     margin-left: 0.7rem;
+    
+  }
+  .chat-time {
+    font-size: 12px;
+    color: #6b7280;
+    white-space: nowrap;
+    margin-left: 0.7rem;
+    text-align: center;
     
   }
 
@@ -409,7 +456,7 @@
   
   /* Active (click) effect */
   .add-event-button:active {
-    background-color: #ffffff; /* Even darker blue when clicked */
+    background-color: #10424e; /* Even darker blue when clicked */
     transform: scale(1); /* Resets scale on click */
   }
   
@@ -423,7 +470,7 @@
   
   /* Change icon color on hover */
   .add-event-button:hover .icon {
-    stroke: #ffffff;
+    stroke: #f71e1e;
   }
   
 
@@ -436,12 +483,15 @@
     .mobile-nav {
       display: none;
     }
-
     .panel {
       display: block !important;
       /* Equal width for all panels */
       flex: 1;
       width: 33.333%;
+    }
+
+    .calendar-content {
+      height: 50%;
     }
   }
 
